@@ -1,38 +1,163 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>bigSlide.js</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
-<div class="cusbody">
-	<nav class="mainMenu">
-		<ul>
-			<li class="act">
-				<a href="#"><i class="fa fa-adjust"></i><span>Intro</span></a>
-			</li>
-			<li>
-				<a href="#"><i class="fa fa-server"></i><span>Services</span></a>
-			</li>
-			<li>
-				<a href="#"><i class="fa fa-smile-o"></i><span>Team</span></a>
-			</li>
-			<li>
-				<a href="#"><i class="fa fa-usd"></i><span>Pricing</span></a>
-			</li>
-			<li>
-				<a href="#" class="suBtn"><i class="fa fa-hand-o-right"></i><span>Sing Up</span></a>
-			</li>
-			</ul>
-	</nav>
-	<div class="mainContainer">
-		<header>
-			<a href="#" class="menuBtn">
-			<span class="lines"></span>
-			</a>
-			<a href="#" class="logo">logo</a>
-		</header>
-		<div class="contentBlock">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a aliquam felis, vel pulvinar felis. Nulla massa quam, elementum sed lacinia eu, faucibus at dui. Praesent urna ante, ultrices sed posuere eget, aliquam eu libero. Morbi vitae mi tellus. Ut vel libero euismod, posuere nisi id, rhoncus odio. Curabitur non magna eget dui ultricies commodo ac quis enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-			<p>Pellentesque sit amet aliquet mauris. Proin in elit varius, maximus erat sed, mattis odio. Ut quis consequat mauris. Nulla porttitor congue finibus. Integer quis urna nec dui tincidunt auctor in at diam. Proin imperdiet nisl nec dictum tempor. Integer in gravida eros, eu sodales lorem. Donec hendrerit massa gravida lacinia pharetra. In ac efficitur odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rhoncus ante vel enim tristique, ut bibendum ex molestie. Fusce congue vel turpis nec pulvinar. Nulla eu diam ex. Suspendisse tristique, orci et faucibus cursus, sem nulla hendrerit ex, quis varius nibh nisl a lectus.</p>
-		</div>
-		<footer>
-		</footer>
-	</div>
-</div>
+    <div id="menu" class="panel" role="navigation">
+        <img src="img/slide.svg" width="60">
+        <ul>
+            <li><a href="https://github.com/ascott1/bigSlide.js"><span class="icon-github nav-icon"></span>Github</a></li>
+            <li><a href="https://raw.github.com/ascott1/bigSlide.js/master/dist/bigSlide.min.js"><span class="icon-download nav-icon"></span>Compressed </a></li>
+            <li><a href="https://raw.github.com/ascott1/bigSlide.js/master/dist/bigSlide.js"><span class="icon-download nav-icon"></span>Uncompressed</a></li>
+            <li><a href="#how"><span class="icon-book nav-icon"></span>How to</a></li>
+            <li><a href="#options"><span class="icon-cog nav-icon"></span>Options</a></li>
+        </ul>
+    </div>
+
+    <div class="masthead">
+        <div class="wrap push">
+
+            <a href="#menu" class="menu-link">&#9776;</a>
+
+            <h1>bigSlide.js</h1>
+            <p class="subtitle">A tiny slide panel navigation jQuery plugin with big dreams.</p>
+
+            <ul class="btn-list">
+                <li><a class="btn" href="https://raw.github.com/ascott1/bigSlide.js/master/dist/bigSlide.min.js">Download Compressed</a></li>
+                <li><a class="btn" href="https://raw.github.com/ascott1/bigSlide.js/master/dist/bigSlide.js">Download Uncompressed</a></li>
+            </ul>
+        </div> <!-- /.wrap -->
+    </div> <!-- /.masthead-->
+
+    <div class="wrap push">
+
+        <h2 id="what">What is bigSlide?</h2>
+
+        <p>bigSlide is a teeny tiny (~1kb compressed) jQuery plugin for creating off-screen slide panel navigation.</p>
+
+        <p>It will slide the navigation panel as well as any containers given the <code>.push</code> class (or a class of your choosing in the settings).</p>
+
+        <h2 id="how">Getting Started</h2>
+
+        <p>In your document, include a link to toggle the navigation:</p>
+
+<pre><code>&lt;a href="#menu" class="menu-link"&gt;&amp;#9776;&lt;/a&gt;</code></pre>
+
+        <p>And your nav menu:</p>
+
+<pre><code>&lt;nav id="menu" class="panel" role="navigation"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;The Ballad of El Goodo&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Thirteen&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;September Gurls&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;What's Going Ahn&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+        <p>Reference jQuery and the big-slide.js file:</p>
+
+<pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.big-slide.js"&gt;&lt;/script&gt;</code></pre>
+
+        <p>To initialize the plugin,:</p>
+
+<pre><code>&lt;script&gt;
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+&lt;/script&gt;</code></pre>
+
+        <h2 id="options">Options</h2>
+
+        <table>
+        <thead>
+            <tr>
+                <th>Variable</th>
+                <th>Default Value</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>menu</td>
+                <td><code>('#menu')</code></td>
+                <td>The attribute ID of the navigation menu</td>
+            </tr>
+            <tr>
+                <td>push</td>
+                <td>('.push')</td>
+                <td>The class given to additional elements to 'push' when the nav is toggled</td>
+            </tr>
+            <tr>
+                <td>side</td>
+                <td>left</td>
+                <td>The side of the navigation menu (either 'right' or 'left')</td>
+            </tr>
+            <tr>
+                <td>menuWidth</td>
+                <td>15.6em</td>
+                <td>The width of the navigation menu</td>
+            </tr>
+            <tr>
+                <td>speed</td>
+                <td>300</td>
+                <td>The speed (in milliseconds) of the navigation menu</td>
+            </tr>
+             <tr>
+                <td>easyClose</td>
+                <td>false</td>
+                <td>Set this to true to allow users to toggle the menu closed with any click</td>
+            </tr>
+        </tbody>
+        </table>
+
+
+        <h2 id="notes">Other notes</h2>
+
+        <p>Although bigSlide will automatically position your menu off screen, I recommend adding the following to your CSS to prevent a flash of the menu on load:</p>
+
+<pre><code>.panel {
+    position: fixed;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+}</code></pre>
+
+Additionally, any elements that use the .push class should be relatively positioned:
+
+<pre><code>.wrap {
+    position: relative;
+}</code></pre>
+
+        <h2 id="license">License</h2>
+
+        <p>bigSlide is licensed under <a href="https://github.com/ascott1/bigSlide.js/blob/master/LICENSE-MIT">The MIT License (MIT)</a></p>
+
+    <footer>
+        <div class="credits">
+            <p>Created by <a href="http://www.adamdcott.com">Adam D. Scott</a></p>
+            <p>Slide icon by <a href="http://thenounproject.com/jmkeuning/">James Keuning</a></p>
+        </div> <!-- /.credits-->
+        <div class="footer-links">
+            <a href="https://github.com/ascott1/bigSlide.js"><span class="icon-github"></span><span class="hide">Github</span></a>
+        </div>
+    </div> <!-- /.wrap-->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="js/bigSlide.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+    </body>
+</html>
