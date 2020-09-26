@@ -4,9 +4,28 @@
 <title>Stream Test</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/main.css">
+    
+<!-- Player Out Put-->
+<!--
+<div style="text-align: center;">
+<h4>
+<i><u>Stats : <span style="color: #0c343d;">'ctrl+shift+s'</span></u></i></h4>
+</div>
+-->
+<script crossorigin="anonymous" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/clappr-stats/dist/clappr-stats.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/clappr-nerd-stats/dist/clappr-nerd-stats.min.js" type="text/javascript"></script>
+<!-- Player Out Put-->
+    
+    
+<!-- Link Out Put-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>
 $(window).on('load', function () {
     $('#m3u8-placeholder')[0].value = localStorage.getItem('m3u8-link') || '';
@@ -16,6 +35,7 @@ $(window).on('load', function () {
     });
 });
 </script>
+<!-- Link Out Put-->
 <style>
 .imgAddCart {
 height: 70px;
@@ -35,18 +55,6 @@ window.open("url");
 </header>
 
 
-<!--
-<div style="text-align: center;">
-<h4>
-<i><u>Stats : <span style="color: #0c343d;">'ctrl+shift+s'</span></u></i></h4>
-</div>
--->
-<script crossorigin="anonymous" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
-<script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/clappr-stats/dist/clappr-stats.min.js" type="text/javascript"></script>
-<script src="//cdn.jsdelivr.net/npm/clappr-nerd-stats/dist/clappr-nerd-stats.min.js" type="text/javascript"></script>
 
     
 <script>
@@ -54,6 +62,7 @@ window.open("url");
 </script>
 <div id="player" style="width: 100%;"></div>
 
+    
 <div class="input-group">
 <input type="text" class="form-control" placeholder="တီဗီခ်န္နယ္ m3u8 လင့္ထည့္ရန္ေနရာ" id="m3u8-placeholder">
 <span class="input-group-btn">
