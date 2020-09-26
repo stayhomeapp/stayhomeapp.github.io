@@ -14,6 +14,9 @@ border-radius: 50%;
 object-fit: contain;
 -o-object-fit: contain;
 }
+function openLink(){
+window.open("url");
+}
 </style>
 </head>
 <main id="main">
@@ -28,7 +31,8 @@ object-fit: contain;
   
 <li class="w3-section w3-animate-top w3-card w3-round-xlarge w3-display-container">
 <img src="https://img.icons8.com/color/96/000000/orange.png" alt="male"/>
-<span class="w3-margin-left w3-large">Orange</span>
+<span class="w3-margin-left w3-large">STH Movie</span>
+<button onclick="https://stayhomeapp.github.io/web/sthmoviedw.html">
 <img class="w3-button w3-display-right w3-margin-right imgAddCart"
 src="https://img.icons8.com/.../48/000000/add-shopping-cart.png" alt="add to cart"
 onclick="showDialog('Confirmation', 'Do you want to add this item to your shopping cart?')"/>
@@ -36,7 +40,7 @@ onclick="showDialog('Confirmation', 'Do you want to add this item to your shoppi
   
 <li class="w3-section w3-animate-top w3-card w3-round-xlarge w3-display-container">
 <img src="https://img.icons8.com/color/96/000000/orange.png" alt="male"/>
-<span class="w3-margin-left w3-large">Orange</span>
+<span class="w3-margin-left w3-large">STH Tv</span>
 <img class="w3-button w3-display-right w3-margin-right imgAddCart"
 src="https://img.icons8.com/.../48/000000/add-shopping-cart.png" alt="add to cart"
 onclick="showDialog('Confirmation', 'Do you want to add this item to your shopping cart?')"/>
@@ -52,7 +56,7 @@ onclick="showDialog('Confirmation', 'Do you want to add this item to your shoppi
 <p id="dialog_1_message"></p>
 </div>
 <div class="w3-container w3-padding">
-<button onclick="dismissDialog()" class="w3-right w3-button w3-blue w3-round-xxlarge">OK</button>
+<button  onclick="dismissDialog()" class="w3-right w3-button w3-blue w3-round-xxlarge">OK</button>
 <button onclick="dismissDialog()" class="w3-margin-right w3-right w3-button w3-light-gray w3-round-xxlarge">
 Cancel
 </button>
