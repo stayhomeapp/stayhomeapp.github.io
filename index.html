@@ -46,34 +46,5 @@ src="https://stayhomeapp.github.io/web/img/download.png" alt="add to cart"
 onclick="showDialog('Confirmation', 'Do you want to add this item to your shopping cart?')"/>
 </li>
   
-  
-</div>
-</main>
-<div id="dialog_1" class="w3-modal">
-<div class="w3-modal-content w3-round-xlarge w3-card w3-animate-top">
-<div class="w3-container">
-<h2 id="dialog_1_title"></h2>
-<p id="dialog_1_message"></p>
-</div>
-<div class="w3-container w3-padding">
-<button  onclick="dismissDialog()" class="w3-right w3-button w3-blue w3-round-xxlarge">OK</button>
-<button onclick="dismissDialog()" class="w3-margin-right w3-right w3-button w3-light-gray w3-round-xxlarge">
-Cancel
-</button>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-let dialog1 = document.getElementById("dialog_1");
-let dialogTitle = document.getElementById('dialog_1_title');
-let dialogMessage = document.getElementById('dialog_1_message');
-function dismissDialog() {
-dialog1.style.display = 'none';
-}
-function showDialog(title, message) {
-dialog1.style.display = 'block';
-dialogTitle.innerText = title;
-dialogMessage.innerText = message;
-}
 </script>
 </html>
