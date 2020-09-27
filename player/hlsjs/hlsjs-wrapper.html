@@ -40,7 +40,7 @@
 		var hls = new Hls(hlsjsConfig);
 		var wrapper = new HlsjsDnaWrapper(hls, "demoswebsiteandpartners", dnaConfig);
 		var videoElement = document.getElementById('demoplayer');
-		hls.loadSource('https://demo-vod.streamroot.io/index.m3u8');
+		hls.loadSource('http://cdn1.52dvb.xyz/5000/playlist.m3u8');
 		hls.attachMedia(videoElement);
 		hls.on(Hls.Events.MANIFEST_PARSED, function () {
 			videoElement.play();
