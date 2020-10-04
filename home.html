@@ -83,60 +83,61 @@ if (isset($_POST['save_info'])) saveInfo();
         </a>
     </header>
 
-    <div onclick="w3_close()" id="contents" class="content">
-        <div class="w3-panel w3-container">
+  
+<main id="main">
+<header id="header" class="w3-card-4 w3-blue">
+<h3>Stay Home (Movie&TV)</h3>
+</header>
+<figure>
+<div style="text-align: center;">
+<img src="https://stayhomeapp.github.io/web/img/groupcover.png"
+alt="Avatar" style="width:100%;"></div>
+</figure>
+<div style="text-align: center;">
+<p>ကျွန်တော်တို့တွင် STH Movies နှင့် STH Tv ဆိုပြီးဆော့ဝဲနှစ်ခုထုတ်ထားပါသည်။
+STH Movies သည်ရုပ်ရှင်များကြည့်ရန်ဖြစ်ပြီး..။ STH Tv မှာ TV Channel များကိုကြည့်ရှုနိုင်ရန်ဖြစ်ပါသည်။ Download လုပ်လိုသောဆော့ဝဲကိုရွေးချယ်ပြီး Download ပြုလုပ်နိုင်ပါသည်။</p>
+</div>
 
-            <?php $info_row = readInfo() ?>
-            <?php include('login/errors.php') ?>
 
-            <form class="w3-panel w3-container" method="post">
-                <label for="edt_title">
-                    <input id="edt_title" class="w3-input" type="text" name="title" placeholder="Title"
-                           value="<?php if ($info_row) echo $info_row['title'] ?>"/>
-                </label>
-
-                <label for="edt_message">
-                    <input id="edt_message" class="w3-input w3-section" type="text" name="message"
-                           placeholder="Message"
-                           value="<?php if ($info_row) echo $info_row['message'] ?>"/>
-                </label>
-
-                <label for="show_info_switch">
-                    <p>Show Info</p>
-                    <select id="show_info_switch" class="w3-select" name="shouldShowInfo">
-                        <?php if ($info_row && $info_row['should_show_info']) { ?>
-                            <option value="1">On</option>
-                            <option value="0">Off</option>
-                        <?php } else { ?>
-                            <option value="0">Off</option>
-                            <option value="1">On</option>
-                        <?php } ?>
-                    </select>
-                </label>
-
-                <label for="maintenance_switch">
-                    <p>Maintenance Mode</p>
-                    <select id="maintenance_switch" class="w3-select" name="maintenanceMode">
-                        <?php if ($info_row && $info_row['maintenance_mode']) { ?>
-                            <option value="1">On</option>
-                            <option value="0">Off</option>
-                        <?php } else { ?>
-                            <option value="0">Off</option>
-                            <option value="1">On</option>
-                        <?php } ?>
-                    </select>
-                </label>
-
-                <div class="w3-center w3-margin-top">
-                    <button class="w3-button w3-green w3-mobile w3-round-large" type="submit" name="save_info">
-                        Save
-                    </button>
-                </div>
-            </form>
-
-        </div>
-    </div>
-
+<div id="contents" class="content">
+<ul class="w3-ul">
+<li class="w3-section w3-animate-top w3-card w3-round-xlarge w3-display-container">
+<img src="https://stayhomeapp.github.io/web/img/movielogo.png" alt="male"/>
+<span class="w3-margin-left w3-large">STH Movies Android</span>
+  
+<a href="https://stayhomeapp.github.io/web/sthmoviesdw.html">
+<img class="w3-button w3-display-right w3-margin-right imgAddCart"
+src="https://stayhomeapp.github.io/web/img/download.png" alt="add to cart"
+onclick="openLink(https://stayhomeapp.github.io/web/sthmoviesdw.html)"/></a>
+</li>
+<li class="w3-section w3-animate-top w3-card w3-round-xlarge w3-display-container">
+<img src="https://stayhomeapp.github.io/web/img/tvlogo.png" alt="male"/>
+<span class="w3-margin-left w3-large">STH Tv Android</span>
+  
+<a href="https://stayhomeapp.github.io/web/sthtvdw.html">
+<img class="w3-button w3-display-right w3-margin-right imgAddCart"
+src="https://stayhomeapp.github.io/web/img/download.png" alt="add to cart"
+onclick="openLink(https://stayhomeapp.github.io/web/sthtvdw.html)"/></a>
+</li>
+  
+  
+<li class="w3-section w3-animate-top w3-card w3-round-xlarge w3-display-container">
+<img src="https://stayhomeapp.github.io/web/img/play.png" alt="male"/>
+<span class="w3-margin-left w3-large">M3U8 Stream Test</span>
+  
+<a href="https://stayhomeapp.github.io/web/streamtest.html">
+<img class="w3-button w3-display-right w3-margin-right imgAddCart"
+src="https://stayhomeapp.github.io/web/img/play2.png" alt="add to cart"
+onclick="openLink(https://stayhomeapp.github.io/web/play2.html)"/></a>
+</li>
+  
+<div style="text-align: center;">
+<p>© 2020 Stay Home. All Rights Reserved..</p></div>
+  
+<div style="text-align: center;">
+ <a href='https://www.counters-free.net/'>Get Counters Free!</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=5a59e8b0583e37e78638629354b57c025b2c9bef'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/749453/t/1"></script>
+</div>
 
 </main>
 
